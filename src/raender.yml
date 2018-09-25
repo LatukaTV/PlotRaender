@@ -1,0 +1,132 @@
+normal:
+  raender:
+    '&dBruchsteinstufe':
+      material: STEP
+      damage: 3
+    '&dSteinstufe':
+      material: STEP
+      damage: 0
+    '&dSteinziegelstufe':
+      material: STEP
+      damage: 5
+    '&dZiegelstufe':
+      material: STEP
+      damage: 4
+    '&dEichenholzstufe':
+      material: WOOD_STEP
+      damage: 0
+    '&dSchwarzeichenholzstufe':
+      material: WOOD_STEP
+      damage: 5
+    '&dNetherziegelstufe':
+      material: STEP
+      damage: 6
+    '&dSandsteinstufe':
+      material: STEP
+      damage: 1
+    '&dRote Sandsteinstufe':
+      material: STONE_SLAB2
+      damage: 0
+    '&dRoter Teppich':
+      material: CARPET
+      damage: 14
+    '&dBlauer Teppich':
+      material: CARPET
+      damage: 11
+    '&dHellgruener Teppich':
+      material: CARPET
+      damage: 5
+    '&dGelber Teppich':
+      material: CARPET
+      damage: 4
+    '&dHellblauer Teppich':
+      material: CARPET
+      damage: 9
+    '&dVioletter Teppich':
+      material: CARPET
+      damage: 10
+    '&dOranger Teppich':
+      material: CARPET
+      damage: 1
+    '&dRosa Teppich':
+      material: CARPET
+      damage: 6
+    '&dSchwarzer Teppich':
+      material: CARPET
+      damage: 15
+    '&dBruchsteinmauer':
+      material: COBBLE_WALL
+      damage: 0
+    '&dBemooste Bruchsteinmauer':
+      material: COBBLE_WALL
+      damage: 1
+    '&dEichenholzzaun':
+      material: FENCE
+      damage: 0
+    '&dSchwarzeichenholzzaun':
+      material: DARK_OAK_FENCE
+      damage: 0
+    '&dNetherziegelzaun':
+      material: NETHER_FENCE
+      damage: 0
+    '&dEisengitter':
+      material: IRON_FENCE
+      damage: 0
+    '&dGlowstone':
+      material: GLOWSTONE
+      damage: 0
+    '&dRedstone-Lampe':
+      material: REDSTONE_LAMP_OFF
+      damage: 0
+    '&dremoveRand':
+      material: BARRIER
+      damage: 0   
+epic:
+  includes: 
+  - normal
+  raender:
+    '&dObsidian':
+      material: OBSIDIAN
+      damage: 0
+    '&dMelon':
+      material: MELON_BLOCK
+      damage: 0
+    '&dSponge':
+      material: SPONGE
+      damage: 0
+    '&dBookShelf':
+      material: BOOKSHELF
+      damage: 0
+    '&dSeaLantern':
+      material: SEA_LANTERN
+      damage: 0
+    '&dGoldBlock':
+      material: GOLD_BLOCK
+      damage: 0
+    '&dDiamondBlock':
+      material: DIAMOND_BLOCK
+      damage: 0
+    '&dEmeraldBlock':
+      material: EMERALD_BLOCK
+      damage: 0
+    '&dBeacon':
+      material: BEACON
+      damage: 0
+    '&dGlas':
+      material: GLASS
+      damage: 0
+    '&dSeelensand':
+      material: SOUL_SAND
+      damage: 0
+    '&dLeuchtender K{ue}rbis':
+      material: JACK_O_LANTERN
+      damage: 0
+    '&dPackeis':
+      material: PACKED_ICE
+      damage: 0
+    '&dQuartz Block':
+      material: QUARTZ_BLOCK
+      damage: 0
+    '&dHellblaues Glas':
+      material: STAINED_GLASS
+      damage: 3
