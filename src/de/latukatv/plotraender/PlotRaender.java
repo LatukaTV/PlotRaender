@@ -39,41 +39,7 @@ public class PlotRaender extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new EventHandlers(), instance);
 
-        for (String key : raenderConfig.get().getConfigurationSection("").getKeys(false)) {
-            Inventory inv = Bukkit.createInventory(null, 9 * 6, "§8Rand » §6" + key);
-            System.out.println(key + " includes: " + (raenderConfig.get().isSet(key + ".includes") ? raenderConfig.get().getStringList(key + ".includes") : "Not Set"));
-            if (raenderConfig.get().isSet(key + ".includes")) {
-                for (String include : raenderConfig.get().getStringList(key + ".includes")) {
-                    if (!raenderConfig.get().contains(include)) {
-                        System.out.println(include + " wird übersprungen da es nicht exestiert");
-                        continue;
-                    }
-                    for (String itemKey : raenderConfig.get().getConfigurationSection(include + ".raender").getKeys(false)) {
-                        String materialString = raenderConfig.get().getString(include + ".raender." + itemKey + ".material");
-                        if (materialString != null) {
-//                            System.out.println(key + " " + materialString);
-                            Material material = Material.getMaterial(materialString);
-                            if (material != null) {
-//                                System.out.println(key + " material not null " + material);
-                                inv.addItem(Utils.createItem(material, 1, raenderConfig.get().getInt(include + ".raender." + itemKey + ".damage"), Utils.format(itemKey)));
-                            }
-                        }
-                    }
-                }
-            }
-            for (String itemKey : raenderConfig.get().getConfigurationSection(key + ".raender").getKeys(false)) {
-                String materialString = raenderConfig.get().getString(key + ".raender." + itemKey + ".material");
-                if (materialString != null) {
-//                    System.out.println(key + " " + materialString);
-                    Material material = Material.getMaterial(materialString);
-                    if (material != null) {
-//                        System.out.println(key + " material not null " + material);
-                        inv.addItem(Utils.createItem(material, 1, raenderConfig.get().getInt(key + ".raender." + itemKey + ".damage"), Utils.format(itemKey)));
-                    }
-                }
-            }
-            inventories.put(key, inv);
-        }
+        loadInventories();
     }
 
     public void onDisable() {
@@ -101,5 +67,40 @@ public class PlotRaender extends JavaPlugin {
 
     public Configs getCommandBlacklistConfig() {
         return commandBlacklistConfig;
+    }
+
+    public void loadInventories() {
+        if(!inventories.isEmpty())
+            inventories.clear();
+        for (String key : raenderConfig.get().getConfigurationSection("").getKeys(false)) {
+            Inventory inv = Bukkit.createInventory(null, 9 * 6, "§8Rand » §6" + key);
+            if (raenderConfig.get().isSet(key + ".includes")) {
+                for (String include : raenderConfig.get().getStringList(key + ".includes")) {
+                    if (!raenderConfig.get().contains(include)) {
+                        System.out.println(include + " wird übersprungen da es nicht exestiert");
+                        continue;
+                    }
+                    for (String itemKey : raenderConfig.get().getConfigurationSection(include + ".raender").getKeys(false)) {
+                        String materialString = raenderConfig.get().getString(include + ".raender." + itemKey + ".material");
+                        if (materialString != null) {
+                            Material material = Material.getMaterial(materialString);
+                            if (material != null) {
+                                inv.addItem(Utils.createItem(material, 1, raenderConfig.get().getInt(include + ".raender." + itemKey + ".damage"), Utils.format(itemKey)));
+                            }
+                        }
+                    }
+                }
+            }
+            for (String itemKey : raenderConfig.get().getConfigurationSection(key + ".raender").getKeys(false)) {
+                String materialString = raenderConfig.get().getString(key + ".raender." + itemKey + ".material");
+                if (materialString != null) {
+                    Material material = Material.getMaterial(materialString);
+                    if (material != null) {
+                        inv.addItem(Utils.createItem(material, 1, raenderConfig.get().getInt(key + ".raender." + itemKey + ".damage"), Utils.format(itemKey)));
+                    }
+                }
+            }
+            inventories.put(key, inv);
+        }
     }
 }
