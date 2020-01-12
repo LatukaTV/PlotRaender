@@ -1,0 +1,8 @@
+name: PlotsquaredRaender
+author: LatukaTV
+version: 1.2
+main: de.latukatv.plotraender.PlotRaender
+api-version: 1.15
+
+commands:
+ pr:

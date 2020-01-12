@@ -1,0 +1,129 @@
+normal:
+  raender:
+    '&dBruchsteinstufe':
+      material: COBBLESTONE_SLAB
+      damage: 0
+    '&dSteinstufe':
+      material: STONE_SLAB
+      damage: 0
+    '&dSteinziegelstufe':
+      material: STONE_BRICK_SLAB
+      damage: 0
+    '&dZiegelstufe':
+      material: BRICK_SLAB
+      damage: 0
+    '&dEichenholzstufe':
+      material: OAK_SLAB
+      damage: 0
+    '&dSchwarzeichenholzstufe':
+      material: DARK_OAK_SLAB
+      damage: 0
+    '&dNetherziegelstufe':
+      material: NETHER_BRICK_SLAB
+      damage: 0
+    '&dSandsteinstufe':
+      material: SANDSTONE_SLAB
+      damage: 0
+    '&dRote Sandsteinstufe':
+      material: RED_SANDSTONE_SLAB
+      damage: 0
+    '&dRoter Teppich':
+      material: RED_CARPET
+      damage: 0
+    '&dBlauer Teppich':
+      material: BLUE_CARPET
+      damage: 0
+    '&dHellgruener Teppich':
+      material: LIME_CARPET
+      damage: 0
+    '&dGelber Teppich':
+      material: YELLOW_CARPET
+      damage: 0
+    '&dHellblauer Teppich':
+      material: LIGHT_BLUE_CARPET
+      damage: 0
+    '&dVioletter Teppich':
+      material: PURPLE_CARPET
+      damage: 0
+    '&dOranger Teppich':
+      material: ORANGE_CARPET
+      damage: 0
+    '&dRosa Teppich':
+      material: PINK_CARPET
+      damage: 0
+    '&dSchwarzer Teppich':
+      material: BLACK_CARPET
+      damage: 0
+    '&dBruchsteinmauer':
+      material: COBBLESTONE_WALL
+      damage: 0
+    '&dBemooste Bruchsteinmauer':
+      material: MOSSY_COBBLESTONE_WALL
+      damage: 0
+    '&dEichenholzzaun':
+      material: OAK_FENCE
+      damage: 0
+    '&dSchwarzeichenholzzaun':
+      material: DARK_OAK_FENCE
+      damage: 0
+    '&dNetherziegelzaun':
+      material: NETHER_BRICK_FENCE
+      damage: 0
+    '&dEisengitter':
+      material: IRON_BARS
+      damage: 0
+    '&dGlowstone':
+      material: GLOWSTONE
+      damage: 0
+    '&dremoveRand':
+      material: BARRIER
+      damage: 0
+epic:
+  includes:
+    - normal
+  raender:
+    '&dObsidian':
+      material: OBSIDIAN
+      damage: 0
+    '&dMelon':
+      material: MELON
+      damage: 0
+    '&dSponge':
+      material: SPONGE
+      damage: 0
+    '&dBookShelf':
+      material: BOOKSHELF
+      damage: 0
+    '&dSeaLantern':
+      material: SEA_LANTERN
+      damage: 0
+    '&dGoldBlock':
+      material: GOLD_BLOCK
+      damage: 0
+    '&dDiamondBlock':
+      material: DIAMOND_BLOCK
+      damage: 0
+    '&dEmeraldBlock':
+      material: EMERALD_BLOCK
+      damage: 0
+    '&dBeacon':
+      material: BEACON
+      damage: 0
+    '&dGlas':
+      material: GLASS
+      damage: 0
+    '&dSeelensand':
+      material: SOUL_SAND
+      damage: 0
+    '&dLeuchtender K{ue}rbis':
+      material: JACK_O_LANTERN
+      damage: 0
+    '&dPackeis':
+      material: PACKED_ICE
+      damage: 0
+    '&dQuartz Block':
+      material: QUARTZ_BLOCK
+      damage: 0
+    '&dHellblaues Glas':
+      material: LIGHT_BLUE_STAINED_GLASS
+      damage: 3
